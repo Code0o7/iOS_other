@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>myCenterButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)createCenterButton
+{
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 40)];
+    btn.center = self.view.center;
+    btn.backgroundColor  = [UIColor blueColor];
+    [btn setTitle:@"按钮" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)btnClick
+{
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D10DD3F9-EFF9-434B-AE74-64D0DC155F30</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建控制器中心按钮</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createCenterButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

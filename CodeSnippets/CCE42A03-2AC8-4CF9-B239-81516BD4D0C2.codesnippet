@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mySingleTon</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (instancetype)allocWithZone:(struct _NSZone *)zone
+{
+    static &lt;#class#&gt; *singleTon;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        singleTon = [super allocWithZone:zone];
+    });
+    
+    return singleTon;
+}
+
++ (instancetype)share
+{
+    return [[self alloc]init];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CCE42A03-2AC8-4CF9-B239-81516BD4D0C2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>单利实现</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>singleTon implementation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

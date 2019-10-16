@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mymodelfunction</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (instancetype)initWithDic:(NSDictionary *)dic
+{
+    if (self = [super init]) {
+        
+    }
+    
+    return self;
+}
+
++ (instancetype)&lt;#name#&gt;WithDic:(NSDictionary *)dic
+{
+    return [[self alloc]initWithDic:dic];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BC641E6A-296E-4283-B563-5D3FDD3BC3DE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>模型方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>model function</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
