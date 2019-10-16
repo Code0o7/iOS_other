@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14064C1220C789BB0028A61C /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14064C1120C789BA0028A61C /* UIImage+Additions.m */; };
+		14064C1820C7DA400028A61C /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14064C1620C7DA400028A61C /* NSString+Additions.m */; };
+		14232D381F7BA5EB00629ED8 /* VideoCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 14232D291F7BA5EB00629ED8 /* VideoCaptureDevice.m */; };
+		14232D391F7BA5EB00629ED8 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14232D2C1F7BA5EB00629ED8 /* CircleView.m */; };
+		14232D3A1F7BA5EB00629ED8 /* DetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14232D2E1F7BA5EB00629ED8 /* DetectionViewController.m */; };
+		14232D3B1F7BA5EB00629ED8 /* FaceBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14232D301F7BA5EB00629ED8 /* FaceBaseViewController.m */; };
+		14232D3C1F7BA5EB00629ED8 /* LivenessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14232D321F7BA5EB00629ED8 /* LivenessViewController.m */; };
+		14232D3D1F7BA5EB00629ED8 /* RemindView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14232D341F7BA5EB00629ED8 /* RemindView.m */; };
+		14232D3E1F7BA5EB00629ED8 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 14232D371F7BA5EB00629ED8 /* ImageUtils.m */; };
+		143B98671F189B0E00C253E4 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143B98651F189B0E00C253E4 /* AipBase.framework */; };
+		143B98681F189B0E00C253E4 /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143B98661F189B0E00C253E4 /* IdcardQuality.framework */; };
+		143B986A1F189B1400C253E4 /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143B98691F189B1400C253E4 /* AipOcrSdk.framework */; };
+		143B986B1F189B1400C253E4 /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 143B98691F189B1400C253E4 /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		143B986D1F189B1400C253E4 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 143B98651F189B0E00C253E4 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		143B986F1F189B1400C253E4 /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 143B98661F189B0E00C253E4 /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		143FF2B920C68CF5003E7061 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143FF2B720C68CF5003E7061 /* BaseViewController.m */; };
+		143FF2BA20C68CF5003E7061 /* FaceCompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143FF2B820C68CF5003E7061 /* FaceCompareViewController.m */; };
+		14C1BFCD1F726B7100D5FA71 /* idl-license.face-ios in Resources */ = {isa = PBXBuildFile; fileRef = 14C1BFCC1F726B7100D5FA71 /* idl-license.face-ios */; };
+		14CAA0791F17161D007D2B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CAA0781F17161D007D2B0B /* main.m */; };
+		14CAA07C1F17161D007D2B0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CAA07B1F17161D007D2B0B /* AppDelegate.m */; };
+		14CAA07F1F17161D007D2B0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CAA07E1F17161D007D2B0B /* ViewController.m */; };
+		14CAA0821F17161D007D2B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CAA0801F17161D007D2B0B /* Main.storyboard */; };
+		14CAA0841F17161D007D2B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CAA0831F17161D007D2B0B /* Assets.xcassets */; };
+		14CAA0871F17161D007D2B0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CAA0851F17161D007D2B0B /* LaunchScreen.storyboard */; };
+		14CAA0961F171A4B007D2B0B /* com.baidu.idl.face.faceSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14CAA0911F171A4B007D2B0B /* com.baidu.idl.face.faceSDK.bundle */; };
+		14CAA0971F171A4B007D2B0B /* com.baidu.idl.face.model.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14CAA0921F171A4B007D2B0B /* com.baidu.idl.face.model.bundle */; };
+		14CAA0991F171A4B007D2B0B /* IDLFaceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CAA0941F171A4B007D2B0B /* IDLFaceSDK.framework */; };
+		14CAA09F1F1757C1007D2B0B /* AffirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CAA09E1F1757C1007D2B0B /* AffirmViewController.m */; };
+		14CAA0A21F17580A007D2B0B /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CAA0A11F17580A007D2B0B /* ResultViewController.m */; };
+		14CAA0A41F175EAF007D2B0B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CAA0A31F175EAF007D2B0B /* libstdc++.tbd */; };
+		14CAA0C31F176CBD007D2B0B /* NetAccessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CAA0C01F176CBD007D2B0B /* NetAccessModel.m */; };
+		14CAA0C41F176CBD007D2B0B /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CAA0C21F176CBD007D2B0B /* NetManager.m */; };
+		14CAA0C91F1798F1007D2B0B /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = 14CAA0C81F1798F1007D2B0B /* aip.license */; };
+		A4FB4BDABBB9BD25435EA54C /* libPods-FacePrint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 608B974FF56810EBC3536CBE /* libPods-FacePrint.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14CAA09C1F171A63007D2B0B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				143B986D1F189B1400C253E4 /* AipBase.framework in Embed Frameworks */,
+				143B986B1F189B1400C253E4 /* AipOcrSdk.framework in Embed Frameworks */,
+				143B986F1F189B1400C253E4 /* IdcardQuality.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10ADF12125E30159100ED117 /* Pods-FacePrint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePrint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacePrint/Pods-FacePrint.debug.xcconfig"; sourceTree = "<group>"; };
+		14064C1020C789BA0028A61C /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		14064C1120C789BA0028A61C /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		14064C1620C7DA400028A61C /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		14064C1720C7DA400028A61C /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		14232D281F7BA5EB00629ED8 /* VideoCaptureDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCaptureDevice.h; sourceTree = "<group>"; };
+		14232D291F7BA5EB00629ED8 /* VideoCaptureDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCaptureDevice.m; sourceTree = "<group>"; };
+		14232D2B1F7BA5EB00629ED8 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		14232D2C1F7BA5EB00629ED8 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		14232D2D1F7BA5EB00629ED8 /* DetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectionViewController.h; sourceTree = "<group>"; };
+		14232D2E1F7BA5EB00629ED8 /* DetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectionViewController.m; sourceTree = "<group>"; };
+		14232D2F1F7BA5EB00629ED8 /* FaceBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceBaseViewController.h; sourceTree = "<group>"; };
+		14232D301F7BA5EB00629ED8 /* FaceBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceBaseViewController.m; sourceTree = "<group>"; };
+		14232D311F7BA5EB00629ED8 /* LivenessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivenessViewController.h; sourceTree = "<group>"; };
+		14232D321F7BA5EB00629ED8 /* LivenessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivenessViewController.m; sourceTree = "<group>"; };
+		14232D331F7BA5EB00629ED8 /* RemindView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindView.h; sourceTree = "<group>"; };
+		14232D341F7BA5EB00629ED8 /* RemindView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindView.m; sourceTree = "<group>"; };
+		14232D361F7BA5EB00629ED8 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		14232D371F7BA5EB00629ED8 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		143B98651F189B0E00C253E4 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipBase.framework; path = AipOcrSdk/AipBase.framework; sourceTree = "<group>"; };
+		143B98661F189B0E00C253E4 /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IdcardQuality.framework; path = AipOcrSdk/IdcardQuality.framework; sourceTree = "<group>"; };
+		143B98691F189B1400C253E4 /* AipOcrSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143FF2B520C68CF5003E7061 /* FaceCompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceCompareViewController.h; sourceTree = "<group>"; };
+		143FF2B620C68CF5003E7061 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		143FF2B720C68CF5003E7061 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		143FF2B820C68CF5003E7061 /* FaceCompareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceCompareViewController.m; sourceTree = "<group>"; };
+		14C1BFC91F72648A00D5FA71 /* FaceParameterConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceParameterConfig.h; sourceTree = "<group>"; };
+		14C1BFCC1F726B7100D5FA71 /* idl-license.face-ios */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "idl-license.face-ios"; sourceTree = "<group>"; };
+		14CAA0741F17161D007D2B0B /* FacePrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14CAA0781F17161D007D2B0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14CAA07A1F17161D007D2B0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14CAA07B1F17161D007D2B0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14CAA07D1F17161D007D2B0B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14CAA07E1F17161D007D2B0B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14CAA0811F17161D007D2B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14CAA0831F17161D007D2B0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14CAA0861F17161D007D2B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14CAA0881F17161D007D2B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14CAA0911F171A4B007D2B0B /* com.baidu.idl.face.faceSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = com.baidu.idl.face.faceSDK.bundle; sourceTree = "<group>"; };
+		14CAA0921F171A4B007D2B0B /* com.baidu.idl.face.model.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = com.baidu.idl.face.model.bundle; sourceTree = "<group>"; };
+		14CAA0941F171A4B007D2B0B /* IDLFaceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDLFaceSDK.framework; sourceTree = "<group>"; };
+		14CAA09D1F1757C1007D2B0B /* AffirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffirmViewController.h; sourceTree = "<group>"; };
+		14CAA09E1F1757C1007D2B0B /* AffirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffirmViewController.m; sourceTree = "<group>"; };
+		14CAA0A01F17580A007D2B0B /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		14CAA0A11F17580A007D2B0B /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		14CAA0A31F175EAF007D2B0B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		14CAA0BF1F176CBD007D2B0B /* NetAccessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetAccessModel.h; sourceTree = "<group>"; };
+		14CAA0C01F176CBD007D2B0B /* NetAccessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetAccessModel.m; sourceTree = "<group>"; };
+		14CAA0C11F176CBD007D2B0B /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		14CAA0C21F176CBD007D2B0B /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		14CAA0C81F1798F1007D2B0B /* aip.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = aip.license; path = FaceSDK/aip.license; sourceTree = "<group>"; };
+		1B9AFCA25E228F48C16CAD5F /* Pods-FacePrint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePrint.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacePrint/Pods-FacePrint.release.xcconfig"; sourceTree = "<group>"; };
+		608B974FF56810EBC3536CBE /* libPods-FacePrint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FacePrint.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14CAA0711F17161D007D2B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143B98681F189B0E00C253E4 /* IdcardQuality.framework in Frameworks */,
+				14CAA0A41F175EAF007D2B0B /* libstdc++.tbd in Frameworks */,
+				14CAA0991F171A4B007D2B0B /* IDLFaceSDK.framework in Frameworks */,
+				143B98671F189B0E00C253E4 /* AipBase.framework in Frameworks */,
+				A4FB4BDABBB9BD25435EA54C /* libPods-FacePrint.a in Frameworks */,
+				143B986A1F189B1400C253E4 /* AipOcrSdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14064C0F20C789BA0028A61C /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				14064C1020C789BA0028A61C /* UIImage+Additions.h */,
+				14064C1120C789BA0028A61C /* UIImage+Additions.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		14064C1520C7DA400028A61C /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				14064C1620C7DA400028A61C /* NSString+Additions.m */,
+				14064C1720C7DA400028A61C /* NSString+Additions.h */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		14232D261F7BA5EB00629ED8 /* FaceUI */ = {
+			isa = PBXGroup;
+			children = (
+				14232D271F7BA5EB00629ED8 /* Core */,
+				14232D2A1F7BA5EB00629ED8 /* Face */,
+				14232D351F7BA5EB00629ED8 /* Utils */,
+			);
+			path = FaceUI;
+			sourceTree = "<group>";
+		};
+		14232D271F7BA5EB00629ED8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				14232D281F7BA5EB00629ED8 /* VideoCaptureDevice.h */,
+				14232D291F7BA5EB00629ED8 /* VideoCaptureDevice.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		14232D2A1F7BA5EB00629ED8 /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				14232D2B1F7BA5EB00629ED8 /* CircleView.h */,
+				14232D2C1F7BA5EB00629ED8 /* CircleView.m */,
+				14232D2D1F7BA5EB00629ED8 /* DetectionViewController.h */,
+				14232D2E1F7BA5EB00629ED8 /* DetectionViewController.m */,
+				14232D2F1F7BA5EB00629ED8 /* FaceBaseViewController.h */,
+				14232D301F7BA5EB00629ED8 /* FaceBaseViewController.m */,
+				14232D311F7BA5EB00629ED8 /* LivenessViewController.h */,
+				14232D321F7BA5EB00629ED8 /* LivenessViewController.m */,
+				14232D331F7BA5EB00629ED8 /* RemindView.h */,
+				14232D341F7BA5EB00629ED8 /* RemindView.m */,
+			);
+			path = Face;
+			sourceTree = "<group>";
+		};
+		14232D351F7BA5EB00629ED8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14232D361F7BA5EB00629ED8 /* ImageUtils.h */,
+				14232D371F7BA5EB00629ED8 /* ImageUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		14CAA06B1F17161D007D2B0B = {
+			isa = PBXGroup;
+			children = (
+				143B98691F189B1400C253E4 /* AipOcrSdk.framework */,
+				14CAA08E1F171A4B007D2B0B /* Frameworks */,
+				14CAA0761F17161D007D2B0B /* FacePrint */,
+				14CAA0751F17161D007D2B0B /* Products */,
+				5FB58020226EE1922D8D1B01 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		14CAA0751F17161D007D2B0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14CAA0741F17161D007D2B0B /* FacePrint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14CAA0761F17161D007D2B0B /* FacePrint */ = {
+			isa = PBXGroup;
+			children = (
+				14064C1520C7DA400028A61C /* NSString */,
+				14064C0F20C789BA0028A61C /* UIImage */,
+				14CAA09D1F1757C1007D2B0B /* AffirmViewController.h */,
+				14CAA09E1F1757C1007D2B0B /* AffirmViewController.m */,
+				14CAA07A1F17161D007D2B0B /* AppDelegate.h */,
+				14CAA07B1F17161D007D2B0B /* AppDelegate.m */,
+				14CAA0831F17161D007D2B0B /* Assets.xcassets */,
+				143FF2B620C68CF5003E7061 /* BaseViewController.h */,
+				143FF2B720C68CF5003E7061 /* BaseViewController.m */,
+				143FF2B520C68CF5003E7061 /* FaceCompareViewController.h */,
+				143FF2B820C68CF5003E7061 /* FaceCompareViewController.m */,
+				14C1BFC91F72648A00D5FA71 /* FaceParameterConfig.h */,
+				14232D261F7BA5EB00629ED8 /* FaceUI */,
+				14CAA0881F17161D007D2B0B /* Info.plist */,
+				14CAA0851F17161D007D2B0B /* LaunchScreen.storyboard */,
+				14CAA0801F17161D007D2B0B /* Main.storyboard */,
+				14CAA0BE1F176CBD007D2B0B /* NetManager */,
+				14CAA0A01F17580A007D2B0B /* ResultViewController.h */,
+				14CAA0A11F17580A007D2B0B /* ResultViewController.m */,
+				14CAA0771F17161D007D2B0B /* Supporting Files */,
+				14CAA07D1F17161D007D2B0B /* ViewController.h */,
+				14CAA07E1F17161D007D2B0B /* ViewController.m */,
+			);
+			path = FacePrint;
+			sourceTree = "<group>";
+		};
+		14CAA0771F17161D007D2B0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14CAA0781F17161D007D2B0B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14CAA08E1F171A4B007D2B0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				143B98651F189B0E00C253E4 /* AipBase.framework */,
+				143B98661F189B0E00C253E4 /* IdcardQuality.framework */,
+				14CAA0C81F1798F1007D2B0B /* aip.license */,
+				14CAA0A31F175EAF007D2B0B /* libstdc++.tbd */,
+				14CAA0901F171A4B007D2B0B /* FaceSDK */,
+				608B974FF56810EBC3536CBE /* libPods-FacePrint.a */,
+			);
+			name = Frameworks;
+			path = FacePrint/Frameworks;
+			sourceTree = "<group>";
+		};
+		14CAA0901F171A4B007D2B0B /* FaceSDK */ = {
+			isa = PBXGroup;
+			children = (
+				14C1BFCC1F726B7100D5FA71 /* idl-license.face-ios */,
+				14CAA0911F171A4B007D2B0B /* com.baidu.idl.face.faceSDK.bundle */,
+				14CAA0921F171A4B007D2B0B /* com.baidu.idl.face.model.bundle */,
+				14CAA0941F171A4B007D2B0B /* IDLFaceSDK.framework */,
+			);
+			path = FaceSDK;
+			sourceTree = "<group>";
+		};
+		14CAA0BE1F176CBD007D2B0B /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				14CAA0BF1F176CBD007D2B0B /* NetAccessModel.h */,
+				14CAA0C01F176CBD007D2B0B /* NetAccessModel.m */,
+				14CAA0C11F176CBD007D2B0B /* NetManager.h */,
+				14CAA0C21F176CBD007D2B0B /* NetManager.m */,
+			);
+			name = NetManager;
+			path = FacePrint/NetManager;
+			sourceTree = SOURCE_ROOT;
+		};
+		5FB58020226EE1922D8D1B01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10ADF12125E30159100ED117 /* Pods-FacePrint.debug.xcconfig */,
+				1B9AFCA25E228F48C16CAD5F /* Pods-FacePrint.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14CAA0731F17161D007D2B0B /* FacePrint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14CAA08B1F17161D007D2B0B /* Build configuration list for PBXNativeTarget "FacePrint" */;
+			buildPhases = (
+				30786B8FDE603077D409CEC4 /* [CP] Check Pods Manifest.lock */,
+				14CAA0701F17161D007D2B0B /* Sources */,
+				14CAA0711F17161D007D2B0B /* Frameworks */,
+				14CAA0721F17161D007D2B0B /* Resources */,
+				14CAA09C1F171A63007D2B0B /* Embed Frameworks */,
+				7695DF806EDF294AB9EC93ED /* [CP] Embed Pods Frameworks */,
+				C9045114975B07D917782338 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacePrint;
+			productName = FacePrint;
+			productReference = 14CAA0741F17161D007D2B0B /* FacePrint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14CAA06C1F17161D007D2B0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Baidu;
+				TargetAttributes = {
+					14CAA0731F17161D007D2B0B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = K5ZWWSV295;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 14CAA06F1F17161D007D2B0B /* Build configuration list for PBXProject "FacePrint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14CAA06B1F17161D007D2B0B;
+			productRefGroup = 14CAA0751F17161D007D2B0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14CAA0731F17161D007D2B0B /* FacePrint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14CAA0721F17161D007D2B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CAA0871F17161D007D2B0B /* LaunchScreen.storyboard in Resources */,
+				14C1BFCD1F726B7100D5FA71 /* idl-license.face-ios in Resources */,
+				14CAA0841F17161D007D2B0B /* Assets.xcassets in Resources */,
+				14CAA0961F171A4B007D2B0B /* com.baidu.idl.face.faceSDK.bundle in Resources */,
+				14CAA0821F17161D007D2B0B /* Main.storyboard in Resources */,
+				14CAA0C91F1798F1007D2B0B /* aip.license in Resources */,
+				14CAA0971F171A4B007D2B0B /* com.baidu.idl.face.model.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30786B8FDE603077D409CEC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7695DF806EDF294AB9EC93ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacePrint/Pods-FacePrint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9045114975B07D917782338 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacePrint/Pods-FacePrint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14CAA0701F17161D007D2B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CAA07F1F17161D007D2B0B /* ViewController.m in Sources */,
+				143FF2B920C68CF5003E7061 /* BaseViewController.m in Sources */,
+				14CAA09F1F1757C1007D2B0B /* AffirmViewController.m in Sources */,
+				14064C1220C789BB0028A61C /* UIImage+Additions.m in Sources */,
+				14232D391F7BA5EB00629ED8 /* CircleView.m in Sources */,
+				14232D3C1F7BA5EB00629ED8 /* LivenessViewController.m in Sources */,
+				14232D381F7BA5EB00629ED8 /* VideoCaptureDevice.m in Sources */,
+				14CAA0C41F176CBD007D2B0B /* NetManager.m in Sources */,
+				14CAA07C1F17161D007D2B0B /* AppDelegate.m in Sources */,
+				14CAA0C31F176CBD007D2B0B /* NetAccessModel.m in Sources */,
+				14232D3B1F7BA5EB00629ED8 /* FaceBaseViewController.m in Sources */,
+				14064C1820C7DA400028A61C /* NSString+Additions.m in Sources */,
+				14CAA0A21F17580A007D2B0B /* ResultViewController.m in Sources */,
+				143FF2BA20C68CF5003E7061 /* FaceCompareViewController.m in Sources */,
+				14232D3D1F7BA5EB00629ED8 /* RemindView.m in Sources */,
+				14232D3A1F7BA5EB00629ED8 /* DetectionViewController.m in Sources */,
+				14CAA0791F17161D007D2B0B /* main.m in Sources */,
+				14232D3E1F7BA5EB00629ED8 /* ImageUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14CAA0801F17161D007D2B0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14CAA0811F17161D007D2B0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14CAA0851F17161D007D2B0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14CAA0861F17161D007D2B0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14CAA0891F17161D007D2B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14CAA08A1F17161D007D2B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14CAA08C1F17161D007D2B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10ADF12125E30159100ED117 /* Pods-FacePrint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5ZWWSV295;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacePrint/Frameworks",
+					"$(PROJECT_DIR)/FacePrint/Frameworks/FaceSDK",
+					"$(PROJECT_DIR)/FacePrint/Frameworks/AipOcrSdk",
+				);
+				INFOPLIST_FILE = FacePrint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.ld.sfe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		14CAA08D1F17161D007D2B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9AFCA25E228F48C16CAD5F /* Pods-FacePrint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5ZWWSV295;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacePrint/Frameworks",
+					"$(PROJECT_DIR)/FacePrint/Frameworks/FaceSDK",
+					"$(PROJECT_DIR)/FacePrint/Frameworks/AipOcrSdk",
+				);
+				INFOPLIST_FILE = FacePrint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = com.ld.sfe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14CAA06F1F17161D007D2B0B /* Build configuration list for PBXProject "FacePrint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CAA0891F17161D007D2B0B /* Debug */,
+				14CAA08A1F17161D007D2B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14CAA08B1F17161D007D2B0B /* Build configuration list for PBXNativeTarget "FacePrint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CAA08C1F17161D007D2B0B /* Debug */,
+				14CAA08D1F17161D007D2B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14CAA06C1F17161D007D2B0B /* Project object */;
+}
